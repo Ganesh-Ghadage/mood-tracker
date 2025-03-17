@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Mood Tracker</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Mood Tracker</h1>
+
+        <div class="moodInputContainer">
+            <!-- Form to get user mood input -->
+            <form>
+                <fieldset class="moodSelector">
+                    <legend>Select a Your Mood:</legend>
+
+                    <div>
+                        <input class="moodInput" type="radio" id="happy" name="mood" value="Happy 😄" title="happy" />
+                        <label for="happy" class="moodButton" >😄</label>
+                    </div>
+                    <div>
+                        <input class="moodInput" type="radio" id="sad" name="mood" value="Sad 😔" title="sad" />
+                        <label for="sad" class="moodButton" >😔</label>
+                    </div>
+                    <div>
+                        <input class="moodInput" type="radio" id="angry" name="mood" value="Angry 😡" title="angry" />
+                        <label for="angry" class="moodButton" >😡</label>
+                    </div>
+                    <div>
+                        <input class="moodInput" type="radio" id="tired" name="mood" value="Tired 😴" title="tired" />
+                        <label for="tired" class="moodButton" >😴</label>
+                    </div>
+                    <div>
+                        <input class="moodInput" type="radio" id="excited" name="mood" value="Excited 🤩" title="excited" />
+                        <label for="excited" class="moodButton" >🤩</label>
+                    </div>
+
+                </fieldset>
+
+                <textarea name="note" id="noteInput" placeholder="Add a note.."></textarea>
+
+                <button class="myButton" id="saveButton">Save</button>
+            </form>
+        </div>
+
+        <!-- user today's mood display -->
+        <div class="moodDisplayContainer">
+            <p>
+                Your Today's Mood is: <span id="moodDisplay">Select Mood</span>
+            </p>
+            <p>
+                You Note for Today is: <span id="noteDisplay">Add a note</span>
+            </p>
+            
+        </div>
+
+        <!-- to go to check mood timeline in calender mode -->
+        <button class="myButton" id="moodHistoryButton">
+            <a href="./calender.html">Check Mood History</a>
+        </button>
+
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
