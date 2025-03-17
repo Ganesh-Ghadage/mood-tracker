@@ -22,6 +22,6 @@ Your daily mood tracker
 
 ## Deployment link
 
-[Live Demo](https://mood-tracker-pearl.vercel.app/)
+[Live Demo](https://mood-tracker-kohl.vercel.app/)
 
 [GitHub Repo](https://github.com/Ganesh-Ghadage/mood-tracker)
